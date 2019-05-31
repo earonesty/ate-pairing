@@ -16,6 +16,13 @@ typedef unsigned char uint8_t;
 #include <stdint.h>
 #endif
 
+#ifdef max 
+    #undef max
+#endif
+#ifdef min 
+    #undef min
+#endif
+
 using namespace bn;
 
 #ifdef DEBUG_COUNT
